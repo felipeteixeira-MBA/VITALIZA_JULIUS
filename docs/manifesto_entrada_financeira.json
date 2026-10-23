@@ -1,0 +1,26 @@
+{
+  "schema_version": "2.0.0",
+  "executed_at_utc": "2026-10-22T23:25:31.292460+00:00",
+  "python": "3.13.14",
+  "input_name": "pagamentos.csv",
+  "input_sha256": "28b12716caea413b7fd9e16c6bf10a15835b8a443881526818a8395533911b84",
+  "input_rows": 165548,
+  "window_rows": 165548,
+  "unique_rows": 163607,
+  "duplicate_rows": 1941,
+  "duplicate_key": [
+    "user_id",
+    "data_hora_brt",
+    "valor_centavos",
+    "metodo",
+    "status",
+    "tentativa"
+  ],
+  "fee_basis_points": {
+    "app_store": 1500,
+    "google_play": 1500,
+    "cartao": 350,
+    "pix_automatico": 99
+  },
+  "cutoff": "2026-09-30"
+}

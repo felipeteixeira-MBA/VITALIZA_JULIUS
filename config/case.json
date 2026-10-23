@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "start_month": "2024-07-01",
+  "cutoff": "2026-09-30",
+  "timezone": "America/Sao_Paulo",
+  "naive_timestamp_assumption": "America/Sao_Paulo",
+  "max_age_at_cutoff": 110,
+  "fee_basis_points": {
+    "app_store": 1500,
+    "google_play": 1500,
+    "cartao": 350,
+    "pix_automatico": 99
+  },
+  "business_duplicate_key": ["user_id", "data_hora_brt", "valor_centavos", "metodo", "status", "tentativa"],
+  "reference_september_2026": {
+    "approved_before_dedup_cents": 49940240,
+    "duplicate_approved_rows": 93,
+    "duplicate_approved_cents": 683070,
+    "approved_dedup_cents": 49257170,
+    "net_of_fees_rounded_cents": 43644235
+  }
+}

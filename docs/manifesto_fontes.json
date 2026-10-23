@@ -1,0 +1,32 @@
+[
+  {
+    "arquivo": "assinaturas.csv",
+    "bytes": 2529914,
+    "sha256": "29db4d815a99a5435325ab927c0224b7b2fe6bd5bf4e2e97bf4413ae8b97c390"
+  },
+  {
+    "arquivo": "atividades.parquet",
+    "bytes": 19148353,
+    "sha256": "b5269feac894938c2abc696992cd83857f2217db1830fa5a8a6d9ff3c9b860b3"
+  },
+  {
+    "arquivo": "eventos_assinatura.csv",
+    "bytes": 17673808,
+    "sha256": "64032d95b6ca3aad422ba3e11fd71684975d244be02320f854ae28adf4ac5ecd"
+  },
+  {
+    "arquivo": "pagamentos.csv",
+    "bytes": 11586603,
+    "sha256": "28b12716caea413b7fd9e16c6bf10a15835b8a443881526818a8395533911b84"
+  },
+  {
+    "arquivo": "tickets_suporte.csv",
+    "bytes": 494580,
+    "sha256": "6b56d21caaebeb52bc9a045e8a1ec3c56c4817da7db49805ed9d3c8df259155a"
+  },
+  {
+    "arquivo": "usuarios.csv",
+    "bytes": 7857980,
+    "sha256": "c016416ec00362b0dc866d39ad51dce46692508a037a2228c778337728af7550"
+  }
+]
