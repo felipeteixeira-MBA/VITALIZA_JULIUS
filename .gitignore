@@ -1,0 +1,27 @@
+# Insumos privados do data room — nunca versionar
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.csv
+!reports/validated/*.csv
+*.parquet
+*.xlsx
+*.zip
+*.joblib
+heatmaps*/
+*.png
+*.jpg
+
+# Credenciais — jamais
+.env
+*.token
+*secret*
+
+# Temporários
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
