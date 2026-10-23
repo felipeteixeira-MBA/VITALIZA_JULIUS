@@ -9,8 +9,8 @@
 | Modelos de heatmaps | Pesquisa | OOF na mesma coorte; sem ganho incremental demonstrado no desenho testado |
 | Scores de setembro | Não operacionais | Não usar como fila de CRM ou uplift; falta validação temporal |
 | Relatórios HTML históricos | Marcados com aviso | Estudo do método; finanças antigas podem estar desatualizadas |
-| GitHub Actions | Configurado | Ainda não executado em servidor remoto |
-| Publicação GitHub | Não realizada | Nenhum push, repositório remoto ou credencial adicionados |
+| GitHub Actions | Ativo | Executa os testes unitários a cada push |
+| Publicação GitHub | Realizada em 22/10/2026 | felipeteixeira-MBA/VITALIZA_JULIUS (manter privado); conteúdo do repositório caseVitalize migrado para cá |
 
 O arquivo CSV grande anterior não foi sobrescrito. A versão atual é gerada separadamente em `data/processed/`. Manter código e configuração sem registrar esta mudança não bastaria para reprodução.
 
