@@ -1,4 +1,4 @@
-.PHONY: install test test-integration finance panel
+.PHONY: install test test-integration finance panel snapshot
 install:
 	python -m pip install -r requirements.lock.txt
 test:
@@ -9,3 +9,5 @@ finance:
 	python run.py finance
 panel:
 	python run.py panel
+snapshot:
+	python run.py snapshot

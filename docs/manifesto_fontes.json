@@ -1,5 +1,10 @@
 [
   {
+    "arquivo": "amizades.csv",
+    "bytes": 3744869,
+    "sha256": "103029d4dd434912b1b36c91275b94802a8d9f65f93436707c28dd198b2f707c"
+  },
+  {
     "arquivo": "assinaturas.csv",
     "bytes": 2529914,
     "sha256": "29db4d815a99a5435325ab927c0224b7b2fe6bd5bf4e2e97bf4413ae8b97c390"
@@ -10,9 +15,24 @@
     "sha256": "b5269feac894938c2abc696992cd83857f2217db1830fa5a8a6d9ff3c9b860b3"
   },
   {
+    "arquivo": "campanha_ago26.csv",
+    "bytes": 1336466,
+    "sha256": "f635ad72be0453839708ce696f4bb1de3f47d17b52d4354fb119e1d664206a4d"
+  },
+  {
     "arquivo": "eventos_assinatura.csv",
     "bytes": 17673808,
     "sha256": "64032d95b6ca3aad422ba3e11fd71684975d244be02320f854ae28adf4ac5ecd"
+  },
+  {
+    "arquivo": "feed_posts.csv",
+    "bytes": 8895084,
+    "sha256": "0f819ad3d3254a803aeb0e24b65b46158fc5228d7f2ccac354123825ee25a223"
+  },
+  {
+    "arquivo": "onboarding.csv",
+    "bytes": 5730014,
+    "sha256": "03a91268b659d20828761094e6626a90120f82960b867ebee385e94cda9aed0b"
   },
   {
     "arquivo": "pagamentos.csv",
@@ -20,9 +40,19 @@
     "sha256": "28b12716caea413b7fd9e16c6bf10a15835b8a443881526818a8395533911b84"
   },
   {
+    "arquivo": "pesquisa_saida.csv",
+    "bytes": 41561,
+    "sha256": "5534d6bf683564d34a699125faa827395fc1840d1fd30591b74b1b269ecd5c0e"
+  },
+  {
     "arquivo": "tickets_suporte.csv",
     "bytes": 494580,
     "sha256": "6b56d21caaebeb52bc9a045e8a1ec3c56c4817da7db49805ed9d3c8df259155a"
+  },
+  {
+    "arquivo": "uso_mensal.csv",
+    "bytes": 19138870,
+    "sha256": "844db26847fb785af5befc94dbdb575df348fce54124be0c9877f0345ba9ad6c"
   },
   {
     "arquivo": "usuarios.csv",

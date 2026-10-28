@@ -36,13 +36,16 @@ def finance_command(raw_dir: Path, out_dir: Path, config: dict):
 
 def main():
     parser=argparse.ArgumentParser(description='Harness local do case Vitaliza; sem publicação automática.')
-    parser.add_argument('command',choices=['finance','panel'])
+    parser.add_argument('command',choices=['finance','panel','snapshot'])
     parser.add_argument('--raw-dir',type=Path,default=ROOT/'data/raw')
     parser.add_argument('--out-dir',type=Path,default=ROOT/'data/processed')
     parser.add_argument('--config',type=Path,default=ROOT/'config/case.json')
     args=parser.parse_args();config=load_config(args.config)
     if args.command=='finance':
         finance_command(args.raw_dir,args.out_dir,config)
+    elif args.command=='snapshot':
+        from .snapshot import snapshot_command
+        snapshot_command(args.raw_dir,args.out_dir,config)
     else:
         from .tidy import build_panel
         build_panel(args.raw_dir,args.out_dir,config)

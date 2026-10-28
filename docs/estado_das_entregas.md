@@ -9,6 +9,7 @@
 | Modelos de heatmaps | Pesquisa | OOF na mesma coorte; sem ganho incremental demonstrado no desenho testado |
 | Scores de setembro | Não operacionais | Não usar como fila de CRM ou uplift; falta validação temporal |
 | Relatórios HTML históricos | Marcados com aviso | Estudo do método; finanças antigas podem estar desatualizadas |
+| Base analítica do corte (artefato intermediário) | Validada contra 15 âncoras do enunciado (28/10/2026) | Insumo dos objetivos 3–8; snapshot do corte, sem informação pós-30/09; não é painel mensal nem previsão |
 | GitHub Actions | Ativo | Executa os testes unitários a cada push |
 | Publicação GitHub | Realizada em 22/10/2026 | felipeteixeira-MBA/VITALIZA_JULIUS (manter privado); conteúdo do repositório caseVitalize migrado para cá |
 

@@ -48,6 +48,25 @@ Jan–set/2026: bruto dedup R$ 4.090.356,60; líquido R$ 3.629.311,33.
 Os valores mês a mês estão em `reports/validated/` e são verificados por
 `tests/test_validacao_independente.py` (marcado `integration`).
 
+## Base analítica do corte — artefato intermediário (28/10/2026)
+
+Snapshot de **uma linha por assinante pagante ativo em 30/09/2026 (14.753 ×
+61)**, integrando os 12 arquivos do data room pelo `user_id`
+(`src/vitaliza_case/snapshot.py`, comando `python run.py snapshot`). Reutiliza
+o pipeline financeiro canônico (dedup funcional, centavos, Brasília) e a regra
+oficial de churn do dicionário §11 — perda é assinatura **ativa no início do
+mês** cujo fim cai no mês; começou-e-terminou no mesmo mês fica fora do
+numerador (sem essa regra, set/26 daria 717 em vez de 714).
+
+Âncoras reconciliadas em 28/10 por recálculo externo (Claude) e travadas em
+`tests/test_snapshot_corte.py` (`integration`): 14.753 pagantes e 60
+cortesias; MRR R$ 457.281,85 (última cobrança aprovada > 0; anual ÷ 12);
+churn set/26 = 714/14.319 e abr/26 = 1.154/14.237; médias 5,62% (2025) e
+6,62% (2026); mix anual/mensal 8.478/6.275; mix de canal 5.395/4.964/2.994/
+1.400; 1.941 duplicados funcionais. Nenhuma variável usa informação posterior
+ao corte. A versão Excel comentada (LEIA-ME, dicionário, KPIs, série de churn,
+qualidade) foi entregue à parte, fora do Git, junto do CSV.
+
 ## Lições registradas
 
 1. **Conciliar somas não valida regra de negócio.** Fonte bruta e painel
@@ -68,3 +87,4 @@ Os valores mês a mês estão em `reports/validated/` e são verificados por
 | Data | Mudança |
 | --- | --- |
 | 22/10/2026 | Deduplicação funcional definida e validada; TIDY v1 substituído nas finanças; publicação no GitHub do grupo; migração do conteúdo do repositório `caseVitalize`. |
+| 28/10/2026 | Base analítica do corte (artefato intermediário) adicionada ao pacote: comando `snapshot`, 12 insumos no manifesto e regressão de âncoras em teste de integração. |

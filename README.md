@@ -4,10 +4,11 @@ Projeto educacional do case Vitaliza, organizado a partir do trabalho realizado 
 
 ## Estado atual
 
-- Versão canônica: **0.2.0**, esquema TIDY **2.0.0**.
+- Versão canônica: **0.3.0**, esquema TIDY **2.0.0**.
 - Corte: **30/09/2026**, mês de referência em Brasília.
 - Painel: **946.907 linhas × 52 colunas**, 64.829 usuários e 27 meses.
 - Chave: `user_id × mes_referencia`, sem repetição.
+- Base analítica do corte (artefato intermediário): **14.753 × 61**, uma linha por assinante pagante ativo em 30/09/2026; 15 âncoras do enunciado reconciliadas e travadas em teste (`run.py snapshot`).
 - Finanças corrigidas por duplicidade funcional; a V1 era consistente na soma, mas carregava transações duplicadas.
 - Testes unitários e integração local executados; consulte o registro de validação.
 - CI configurado, mas **não executado no GitHub nesta preparação**.
@@ -22,11 +23,12 @@ python -m pip install -r requirements.lock.txt
 python -m pytest -m "not integration" -q
 ```
 
-Coloque os seis insumos autorizados em `data/raw/`: cadastro, assinaturas, eventos de assinatura, pagamentos, atividades Parquet e tickets. Eles **não acompanham o pacote Git e não devem ser enviados por engano**.
+Coloque os insumos autorizados em `data/raw/`. Para `finance` e `panel` bastam seis: cadastro, assinaturas, eventos de assinatura, pagamentos, atividades Parquet e tickets. Para `snapshot` é preciso o data room completo de 12 arquivos (acrescentam-se uso mensal, onboarding, amizades, posts do feed, campanha de agosto e pesquisa de saída; hashes em `docs/manifesto_fontes.json`). Eles **não acompanham o pacote Git e não devem ser enviados por engano**.
 
 ```bash
 python run.py finance
 python run.py panel
+python run.py snapshot
 python -m pytest -m integration -q
 ```
 
